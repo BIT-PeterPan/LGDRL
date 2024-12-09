@@ -1,19 +1,17 @@
-#### Driving scenario description:
-You are driving on a road with 5 lanes, and you are currently driving in the rightmost lane. Your current position is `(790.73, 16.00)`, speed is 23.98 m/s, acceleration is 0.04 m/s^2, and lane position is 790.73 m.
-There are other vehicles driving around you, and below is their basic information:
-- Vehicle `208` is driving on the lane to your left and is ahead of you. The position of it is `(797.69, 12.00)`, speed is 17.95 m/s, acceleration is 0.21 m/s^2, and lane position is 797.69 m.
-- Vehicle `872` is driving on the lane to your left and is behind of you. The position of it is `(753.44, 12.00)`, speed is 16.67 m/s, acceleration is 0.77 m/s^2, and lane position is 753.44 m.
-- Vehicle `400` is driving on the same lane as you and is ahead of you. The position of it is `(830.78, 16.00)`, speed is 19.93 m/s, acceleration is 0.03 m/s^2, and lane position is 830.78 m.
+****Lane State:****
 
-#### Driving Intensions:
-Not available
-#### Available actions:
-Your available actions are: 
-IDLE - remain in the current lane with current speed Action_id: 1
-Turn-left - change lane to the left of the current lane Action_id: 0
-Acceleration - accelerate the vehicle Action_id: 3
-Deceleration - decelerate the vehicle Action_id: 4
+You are driving on a road with 4 lanes, and you are currently driving in the second lane from the left. Your speed is `11.79 m/s`. Your lane position is `683.59 m`. Target is in the rightmost lane, `316.0 m` ahead.
 
+****SV State:****
 
-Remember to follow the format instructions.
-You can stop reasoning once you have a valid action to take. 
+On your driving lane:
+- Vehicle `392` is is ahead of you. The distance is `44.64 m`. It's speed is `19.43 m/s`. It's acceleration is `0.03 m/s^2.`
+- Vehicle `440` is is behind of you. The distance is `22.46 m`. It's speed is `12.55 m/s`. It's acceleration is `-2.00 m/s^2.`
+
+On your left lane:
+- Vehicle `584` is is behind of you. The distance is `26.59 m`. It's speed is `16.27 m/s`. It's acceleration is `1.55 m/s^2.`
+
+On your right lane:
+- Vehicle `624` is is ahead of you. The distance is `4.34 m`. It's' speed is `16.47 m/s`. It's acceleration is `0.42 m/s^2.`
+- Vehicle `48` is is behind of you. The distance is `43.20 m`. It's' speed is `15.13 m/s`. It's acceleration is `0.52 m/s^2.`
+

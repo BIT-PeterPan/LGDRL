@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>DiLu: A Knowledge-Driven Approach to Autonomous Driving with Large Language Models</title>
+  <title>Large Language Model Guided Deep Reinforcement Learning for Decision Making in Autonomous Driving</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
@@ -34,57 +34,25 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">DiLu🐴: A Knowledge-Driven Approach to Autonomous Driving with
-              Large Language Models</h1>
+            <h1 class="title is-1 publication-title">Large Language Model guided Deep Reinforcement Learning for Decision Making in Autonomous Driving</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="https://wenlc.cn/" target="_blank">Licheng Wen</a><sup>1,<i
-                    class="fa-solid fa-scale-balanced fa-xs"></i></sup>,
+                Hao Pang</a><sup>1,
               </span>
               <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=vIU6eHYAAAAJ" target="_blank">Daocheng
-                  Fu</a><sup>1,<i class="fa-solid fa-scale-balanced fa-xs"></i></sup>,
+                Zhenpo Wang</a><sup>1,
               </span>
               <span class="author-block">
-                <a href="https://sankin97.github.io/" target="_blank">Xin Li</a><sup>1,2,<i
-                    class="fa-solid fa-scale-balanced fa-xs"></i></sup>,
-              </span>
-              <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=v9CvBeUAAAAJ" target="_blank">Xinyu
-                  Cai</a><sup>1</sup>,
-              </span>
-              <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=9h86v8kAAAAJ" target="_blank">Tao
-                  Ma</a><sup>1,3</sup>,
-              </span>
-              <span class="author-block">
-                <a href="https://pinlong-cai.github.io/" target="_blank">Pinlong Cai</a><sup>1</sup>,
-              </span><br>
-              <span class="author-block">
-                <a href="mailto:doumin@pjlab.org.cn" target="_blank">Min Dou</a><sup>1</sup>,
-              </span>
-              <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=K0PpvLkAAAAJ" target="_blank">Botian
-                  Shi</a><sup>1,<i class="fa-regular fa-envelope fa-shake"></i></sup>,
-              </span>
-              <span>
-                <a href="https://faculty.ecnu.edu.cn/_s16/hl2/main.psp" target="_blank">
-                  Liang He</a><sup>2</sup>,
-              </span>
-              <span>
-                <a href="https://scholar.google.com/citations?user=gFtI-8QAAAAJ" target="_blank">Yu Qiao</a><sup>1</sup>
+                Guoqiang Li</a><sup>1,<i class="fa-regular fa-envelope fa-shake"></i></sup>,
               </span>
             </div>
 
             <div class="is-size-5 publication-authors">
-              <span class="author-block"><sup>1</sup> Shanghai AI Laboratory, Shanghai, China<br><sup>2</sup> Department
-                of Computer Science, East
-                China Normal University<br><sup>3</sup> The Chinese University of Hong Kong
+              <span class="author-block"><sup>1</sup> School of Mechanical Engineering, Beijing Institute of Technology
               </span>
               <span class="eql-cntrb">
                 <small>
-                  <br><sup><i class="fa-solid fa-scale-balanced fa-sm"></i></sup> Equal Contribution
                   <br><sup><i class="fa-regular fa-envelope fa-shake"></i></sup> Corresponding author
                 </small>
               </span>
@@ -95,7 +63,7 @@
 
                 <!-- Github link -->
                 <span class="link-block">
-                  <a href="https://github.com/PJLab-ADG/DiLu" target="_blank"
+                  <a href="https://github.com/BIT-PeterPan/LGDRL" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -104,16 +72,16 @@
                   </a>
                 </span>
 
-                <!-- ArXiv abstract Link -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/2309.16292" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
+                  <a href="static/pdfs/Large Language Model guided Deep Reinforcement Learning for Decision Making in Autonomous Driving.pdf" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
-                      <i class="ai ai-arxiv"></i>
+                      <i class="fas fa-file-pdf"></i>
                     </span>
-                    <span>arXiv</span>
+                    <span>PDF</span>
                   </a>
-                </span>
+              </span>
+
               </div>
             </div>
           </div>
@@ -123,13 +91,13 @@
   </section>
 
   <!-- Teaser video-->
-  <section class="hero teaser">
+  <!-- <section class="hero teaser">
     <div class="container is-max-desktop">
       <div class="hero-body">
         <center>
-          <video poster="" id="tree" autoplay controls muted loop height="100%" width="80%">
+          <video poster="" id="tree" autoplay controls muted loop height="100%" width="80%"> -->
             <!-- Your video here -->
-            <source src="static/videos/video1.mp4" type="video/mp4">
+            <!-- <source src="static/videos/video1.mp4" type="video/mp4">
           </video>
           <h2 class="subtitle has-text-centered">
             The DiLu framework excels at handling closed-loop driving tasks in challenging driving environments. This
@@ -137,7 +105,7 @@
           </h2>
       </div>
     </div>
-  </section>
+  </section> -->
   <!-- End teaser video -->
 
 
@@ -152,22 +120,7 @@
           <div class="content has-text-justified">
             <p>
               <b>
-                Recent advancements in autonomous driving have relied on data-driven approaches, which are widely
-                adopted
-                but face challenges including dataset bias, overfitting, and uninterpretability. Drawing inspiration
-                from
-                the knowledge-driven nature of human driving, we explore the question of how to instill similar
-                capabilities into autonomous driving systems and summarize a paradigm that integrates an interactive
-                environment, a driver agent, as well as a memory component to address this question. Leveraging large
-                language models with emergent abilities, we propose the DiLu framework, which combines a Reasoning and a
-                Reflection module to enable the system to perform decision-making based on common-sense knowledge and
-                evolve continuously. Extensive experiments prove DiLu's capability to accumulate experience and
-                demonstrate a significant advantage in generalization ability over reinforcement learning-based methods.
-                Moreover, DiLu is able to directly acquire experiences from real-world datasets which highlights its
-                potential to be deployed on practical autonomous driving systems. To the best of our knowledge, we are
-                the
-                first to instill knowledge-driven capability into autonomous driving systems from the perspective of how
-                humans drive.
+                Deep reinforcement learning (DRL) exhibits significant potential in the field of autonomous vehicle behavior decision-making. However, its low learning efficiency usually leads to a suboptimal decision-making policy in complex driving scenarios, limiting its practical application. Although learning from expert guidance is a possible solution, leveraging expert guidance from human is impractical due to the high labor costs involved. In this study, we propose a novel large language model (LLM) guided deep reinforcement learning (LGDRL) framework for addressing the decision-making problem of autonomous vehicles. Within this framework, an LLM-based driving expert is integrated into the DRL to replace humans in providing guidance for the training stage of DRL. Subsequently, in order to efficiently utilize the guidance of the LLM expert to enhance the performance of DRL decision-making policies, the learning and interaction process of DRL is modified through an innovative expert policy constrained DRL algorithm and a novel LLMintervened interaction mechanism. Experimental results demonstrate that in the training stage, our method not only achieves optimal driving performance and the highest learning efficiency but also significantly improves the expert guidance utilization efficiency compared to the baseline algorithms. In the testing stage without LLM expert guidance, agent trained with our method achieves the highest success rate of 90%, surpassing that of a human driving expert. We also find that intermittent interventions by the LLM expert enable DRL agent to maintain strong performance in the testing stage.
               </b>
             </p>
           </div>
@@ -181,23 +134,13 @@
 
   <section class="section" id="Paradigm">
     <div class="container is-max-desktop">
-      <h2 class="title">Knowledge-driven Paradigm</h2>
+      <h2 class="title">LLM Guided DRL Paradigm</h2>
       <div class="hero-body">
         <center>
-          <embed type="image/svg+xml" src="static/images/dilu-Page-3.svg" width="80%" />
+          <img type="image/svg+xml" src="static/images/LGDRL.png" width="80%" />
         </center>
         <h2 class="subtitle has-text-justified" style="padding-top: 1rem;">
-          The knowledge-driven paradigm for autonomous driving systems includes three components:
-          <ol>
-            <li>An <a style="color:darkgreen">environment</a> with which an agent can interact;
-            </li>
-            <li>A <a style="color:#FF6F61">driver agent</a> with recall, reasoning, and reflection abilities;
-            </li>
-            <li>A <a style="color:#2F80ED">memory component</a> to persist experiences;
-            </li>
-          </ol>
-          In continuous evolution, the driver agent observes the environment, queries, and updates experiences from the
-          memory component and performs decision-making.
+          In the LLM Guided DRL Paradigm, the  <a style="color:#CD824F">human expert</a> designs a prompt for the LLM to construct an <a style="color:darkgreen">LLM expert</a>. Then, the <a style="color:darkgreen">LLM expert</a> is able to replace <a style="color:#CD824F">human expert</a>  in providing guidance to enhance the learning process of the DRL agent.
         </h2>
       </div>
     </div>
@@ -210,52 +153,12 @@
       <h2 class="title">Framework</h2>
       <div class="hero-body">
         <center>
-          <embed type="image/svg+xml" src="static/images/dilu-DiLu_framework.svg" width="80%" />
+          <img type="image/svg+xml" src="static/images/framework.bmp" width="80%" />
         </center>
         <h2 class="subtitle has-text-justified" style="padding-top: 1rem;" style="width: 80%;">
-          Based on the knowledge-driven paradigm for autonomous driving systems introduced above, we propose a practical
-          framework called DiLu.
-          <br>
-          DiLu consists of four core modules: <b>Environment, Reasoning, Reflection, and Memory</b>.
-          In particular, the Reasoning module begins by observing the environment and obtaining descriptions of the
-          current scenario. Concurrently, a prompt generator is employed to combine this scenario description with the
-          few-shot experiences of similar situations, which retrieved from the Memory module.
-          These prompts are then fed into an out-of-the-box Large Language Model (LLM), and the decision decoder make an
-          action by decoding LLM's response.
+          Based on the LLM Guided DRL Paradigm paradigm introduced above, we propose the <b>L</b>LM <b>G</b>uided <b>D</b>eep <b>R</b>einforcement <b>L</b>earning (<b>LGDRL</b>) framework. Within this framework, an LLM driving expert is prompted to guide the learning process of the DRL agent. A novel expert policy constrained DRL algorithm, which integrates a policy constraint based on Jensen-Shannon (JS) divergence into the learning objective, is used to facilitate the DRL agent to learn more effectively from the expert guidance. The actions applied to the environment are determined by a novel LLM-intervened interaction mechanism, which allows the LLM expert to intervene in the DRL agent actions when necessary. In the testing stage, the post-trained DRL agent independently completes the driving task without the presence of the LLM expert.
         </h2>
         <br>
-        <h3>Reasoning module</h3>
-        <br>
-        <center>
-          <embed type="image/svg+xml" src="static/images/dilu-Reasoning module.svg" width="80%" />
-        </center>
-        <h2 class="subtitle has-text-justified" style="padding-top: 1rem;" style="width: 80%;">
-          In the Reasoning module, we utilize the experiences derived from the Memory module and the common-sense
-          knowledge of the LLM to perform decision-making for the current traffic scenario.
-          Specifically, the reasoning procedure contains the following procedures:
-          <ol>
-            <li>Encode the scenario by a descriptor; </li>
-            <li>Recall several experience from the Memory module; </li>
-            <li>Generate the prompt; </li>
-            <li>Feed the prompt into the LLM; </li>
-            <li>Decode the action from the LLM's response.</li>
-          </ol>
-        </h2>
-        <br>
-        <h3>Reflection module</h3>
-        <br>
-        <center>
-          <embed type="image/svg+xml" src="static/images/dilu-reflection.svg" width="80%" />
-        </center>
-
-        <br>
-        <h2 class="subtitle has-text-justified" style="padding-top: 1rem;" style="width: 80%;">
-          The Reflection module in DiLu is designed to enhance autonomous driving capabilities by continuously learning
-          from past experiences. It records driving scenarios and decisions made by the Reasoning module during
-          closed-loop driving tasks. Successful sessions enrich the Memory module with key decision frames, while
-          sessions ending in hazards prompt the module to analyze mistakes, rectify decisions, and propose strategies
-          for safer driving, all contributing to the system's improvement.
-        </h2>
       </div>
     </div>
   </section>
@@ -263,49 +166,61 @@
 
   <section class="hero teaser">
     <div class="container is-max-desktop" style="margin-top: 2rem;">
-      <h2 class="title">Results</h2>
+      <h2 class="title">Comparison Results</h2>
+
       <div class="row g-3">
         <div class="col">
           <video poster="" id="v1" autoplay controls muted loop height="100%">
             <!-- Your video here -->
-            <source src="static/videos/lane4_density2.mp4" type="video/mp4">
+            <source src="static/videos/SAC_BC.mp4" type="video/mp4">
           </video>
           <h2 class="subtitle has-text-centered">
-            4 lane with medium traffic
+            DRL agent trained with <b>SAC+BC</b> baseline method
           </h2>
         </div>
+
         <div class="col">
           <video poster="" id="v2" autoplay controls muted loop height="100%">
-            <source src="static/videos/lane5_density2.5.mp4">
+            <source src="static/videos/SAC_RP.mp4">
           </video>
           <h2 class="subtitle has-text-centered">
-            5 lane with medium traffic
+            DRL agent trained with <b>SAC+RP</b> baseline method
           </h2>
         </div>
+
       </div>
       <div class="row g-3">
         <div class="col">
           <video poster="" id="v2" autoplay controls muted loop height="100%">
-            <source src="static/videos/lane5_density3.mp4">
+            <source src="static/videos/SAC_Demo.mp4">
           </video>
           <h2 class="subtitle has-text-centered">
-            5 lane with heavy traffic
+            DRL agent trained with <b>SAC+Demo</b> baseline method
           </h2>
         </div>
         <div class="col">
           <video poster="" id="v2" autoplay controls muted loop height="100%">
-            <source src="static/videos/citysim_lane4.mp4">
+            <source src="static/videos/Vallina_SAC.mp4">
           </video>
           <h2 class="subtitle has-text-centered">
-            Directly use experience from <a href="https://github.com/ozheng1993/UCF-SST-CitySim-Dataset">CitySim</a>
+              DRL agent trained with <b>Vallina_SAC</b> baseline method
+            </h2>
+        </div>
+      </div>
+
+      <div class="row g-3" style="justify-content: center;">
+        <div class="col-auto">
+          <video poster="" id="v5" autoplay controls muted loop height="100%">
+            <source src="static/videos/proposed.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered">
+            DRL agent trained with our proposed <b>LGDRL</b> method
           </h2>
         </div>
       </div>
-      <h2 class="subtitle has-text-centered">
-        The <b>closed-loop</b> driving task in <a href="http://highway-env.farama.org/">Highway-env</a> under different
-        settings.
-        The <span style="color:green;">ego car</span> is controlled by DiLu and the decision-making processes are fully
-        text-based. Dilu learns to follow cars and make sensible lane changes from the past experience in Memory module.
+
+      <h2 class="subtitle has-text-justified" style="padding-top: 1rem;" style="width: 80%;">
+        The driving scenario is constructed by the <a href="http://highway-env.farama.org/">Highway-env</a>. The DRL agent trained with our proposed LGDRL method successfully completes the driving task. However, the other DRL agents do not complete the driving task.
       </h2>
     </div>
   </section>
@@ -313,71 +228,64 @@
 
   <section class="section" id="LiveDemo">
     <div class="container is-max-desktop">
-      <h2 class="title">See what's DiLu thinking:</h2>
+      <h2 class="title">Policy Comparison of Post-trained LGDRL Agent and LLM Expert </h2>
       <div class="row g-3">
+
         <div class="col-6">
           <div class="input-group mb-3">
             <button type="button" class="btn btn-outline-secondary" disabled>Decision Frame</button>
             <input id="decisionFrameValue" type="number" class="form-control"
-              aria-label="Text input with segmented dropdown button" max="29" min="0" value="0">
-            <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              <span class="visually-hidden">Toggle Dropdown</span>
-            </button>
-            <ul class="dropdown-menu" id="dropdownList">
-              <li class="dropdown-item">0</li>
-              <li class="dropdown-item">1</li>
-              <li class="dropdown-item">2</li>
-              <li class="dropdown-item">3</li>
-              <li class="dropdown-item">4</li>
-              <li class="dropdown-item">5</li>
-              <li class="dropdown-item">6</li>
-              <li class="dropdown-item">7</li>
-              <li class="dropdown-item">8</li>
-              <li class="dropdown-item">9</li>
-              <li class="dropdown-item">10</li>
-              <li class="dropdown-item">11</li>
-              <li class="dropdown-item">12</li>
-              <li class="dropdown-item">13</li>
-              <li class="dropdown-item">14</li>
-              <li class="dropdown-item">15</li>
-              <li class="dropdown-item">16</li>
-              <li class="dropdown-item">17</li>
-              <li class="dropdown-item">18</li>
-              <li class="dropdown-item">19</li>
-              <li class="dropdown-item">20</li>
-              <li class="dropdown-item">21</li>
-              <li class="dropdown-item">22</li>
-              <li class="dropdown-item">23</li>
-              <li class="dropdown-item">24</li>
-              <li class="dropdown-item">25</li>
-              <li class="dropdown-item">26</li>
-              <li class="dropdown-item">27</li>
-              <li class="dropdown-item">28</li>
-              <li class="dropdown-item">29</li>
-            </ul>
+              aria-label="Text input with segmented dropdown button" max="62" min="0" value="0">
           </div>
         </div>
-        <div class="col-2">
-          <button type="button" class="btn btn-outline-secondary w-100" onclick="viewFrame()">View Frame</button>
-        </div>
+
         <div class="col-2">
           <button type="button" class="btn btn-outline-secondary w-100" onclick="lastFrame()">Last Frame</button>
         </div>
+
         <div class="col-2">
           <button type="button" class="btn btn-outline-secondary w-100" onclick="nextFrame()">Next Frame</button>
         </div>
+
+        <div class="col-2">
+          <button type="button" class="btn btn-outline-secondary w-100" onclick="viewFrame()">Show Frame</button>
+        </div>
       </div>
-      <img src="static/images/decisionFrame_0.png" class="img-thumbnail" id="frameImage">
-      <div class="row g-3" style="margin-top: 1rem;">
+
+      <img src="static/images/step0.jpg" class="img-thumbnail" id="frameImage">
+
+      <div class="row g-3" style="margin-top: 1.3rem;">
+      <div class="col">
+        <p class="fw-bold" style="font-size: 1.3rem;">Textual description of current frame</p>
+        <div id="showDescription" style="height: 300px; overflow-y: auto; background-color: #f5f5f5;"></div>
+      </div>
+      </div>
+
+
+      <!-- <div class="row g-3" style="margin-top: 1rem;">
+        
         <div class="col">
-          <p class="fw-bold">Description of frame</p>
-          <div id="showDescription" style="height: 500px; overflow-y: auto; background-color: #f5f5f5;"></div>
+          <p class="fw-bold" style="font-size: 1.3rem;">Decision generated by the post-trained LGDRL agent </p>
+          <div id="showDRLDecision" style="height: 300px; overflow-y: auto; background-color: #f5f5f5;"></div>
         </div>
+
         <div class="col">
-          <p class="fw-bold">Decisions generated by DiLu🐴</p>
-          <div id="showThoughtsDecision" style="height: 500px; overflow-y: auto; background-color: #f5f5f5;"></div>
+          <p class="fw-bold" style="font-size: 1.3rem;">Decisions generated by the LLM expert</p>
+          <div id="showThoughtsDecision" style="height: 300px; overflow-y: auto; background-color: #f5f5f5;"></div>
+        </div> -->
+
+        <div class="row" style="margin-top: 1.3rem;">
+          <div class="col-md-4">
+            <p class="fw-bold" style="font-size: 1.3rem;">Decision generated by the post-trained LGDRL agent</p>
+            <div id="showDRLDecision" style="height: 400px; overflow-y: auto; background-color: #f5f5f5;"></div>
+          </div>
+        
+          <div class="col-md-8">
+            <p class="fw-bold" style="font-size: 1.3rem; margin-top: 1.5rem;">Decisions generated by the LLM expert</p>
+            <div id="showThoughtsDecision" style="height: 400px; overflow-y: auto; background-color: #f5f5f5; margin-top: 1.4rem;"></div>
+          </div>
         </div>
+
       </div>
     </div>
   </section>
@@ -388,22 +296,13 @@
       <h2 class="title">BibTeX</h2>
       <div style="position: relative;">
         <button id="copyButton" style="position: absolute; top: 0; right: 0;">Copy</button>
-        <pre><code id="bibtexCode">@misc{wen2023dilu,
-    title={DiLu: A Knowledge-Driven Approach to Autonomous Driving with Large Language Models}, 
-    author={Licheng Wen and Daocheng Fu and Xin Li and Xinyu Cai and Tao Ma and Pinlong Cai and Min Dou and Botian Shi and Liang He and Yu Qiao},
-    year={2023},
-    eprint={2309.16292},
+        <pre><code id="bibtexCode">@misc{haolgdrl,
+    title={Large Language Model Guided Deep Reinforcement Learning for Decision Making in Autonomous Driving}, 
+    author={Hao Pang, Zhenpo Wang, and Guoqiang Li},
+    year={2024},
+    eprint={ },
     archivePrefix={arXiv},
     primaryClass={cs.RO}
-}
-
-@misc{fu2023drive,
-  title={Drive Like a Human: Rethinking Autonomous Driving with Large Language Models}, 
-  author={Daocheng Fu and Xin Li and Licheng Wen and Min Dou and Pinlong Cai and Botian Shi and Yu Qiao},
-  year={2023},
-  eprint={2307.07162},
-  archivePrefix={arXiv},
-  primaryClass={cs.RO}
 }
       </code></pre>
       </div>
@@ -459,6 +358,7 @@
   <!-- End of Statcounter Code -->
 
 </body>
+
 <script>
   function getText(url, callback) {
     $.get(url, function (data) {
@@ -472,17 +372,17 @@
     }
 
     var intValue = parseInt(value, 10);
-    if (intValue >= 0 && intValue <= 29 && value == intValue) {
+    if (intValue >= 0 && intValue <= 62 && value == intValue) {
       return true;
     } else {
-      alert('The Decision Frame should be an integer between 0 and 29.')
+      alert('The Decision Frame should be an integer between 0 and 62.')
       return false;
     }
   }
   function viewFrame() {
     var currentDecisionFrame = $('#decisionFrameValue').val();
     if (isDecisionFrameValid(currentDecisionFrame)) {
-      var imagePath = 'static/images/decisionFrame_' + currentDecisionFrame + '.png';
+      var imagePath = 'static/images/step' + currentDecisionFrame + '.jpg';
       $('#frameImage').attr('src', imagePath);
       var SDPath = 'static/text/scenarioDescription_' + currentDecisionFrame + '.txt';
       getText(SDPath, function (data) {
