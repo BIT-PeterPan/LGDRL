@@ -1,12 +1,16 @@
-The ego-vehicle is currently in the rightmost lane, which is the designated goal zone. Therefore, the priority is to maintain a safe distance and speed in relation to the vehicles ahead in the same lane.
+Since you are already in the rightmost lane, you should stay in this lane.
 
-1. The vehicle ahead (`688`) is `42.70 m` away, traveling faster at `19.46 m/s` compared to the ego-vehicle's current speed of `17.58 m/s`. The speed difference suggests that the vehicle ahead is pulling away, reducing the risk of a collision and maintaining an appropriate time-to-collision (TTC). Our current TTC is much greater than 4 seconds based on the relative speeds and distance.
+Analyze the distance and speed to the car ahead:
+- Vehicle `992` is `42.70 m` ahead of you with a speed of `19.46 m/s`.
+- Ego-vehicle speed is `17.58 m/s`.
 
-2. Since the ego-vehicle is already in the rightmost lane, no lane change is necessary. There is no option to change to a lane on the right, as there is no lane available there.
+Considering the Time-To-Collision (TTC):
+- The relative speed (speed difference) to the vehicle ahead (`992`) is 19.46 - 17.58 = `1.88 m/s`.
+- TTC = Distance to the car ahead / Relative speed = `42.70 m` / `1.88 m/s` ≈ 22.71 s, which is safe because it is larger than 4 seconds.
 
-3. Considering the available actions, the Action Utility Analysis recommends acceleration to catch up with the vehicle ahead due to being far from the this lead vehicle.
-
-After analyzing the situation and based on the conditions above, the ego-vehicle should accelerate to maintain a better positioning in the flow of traffic in the rightmost lane.
+Currently, there is more distance to the front vehicle than the minimum safety, indicating room to adjust speed:
+- Ego-vehicle has a speed of `17.58 m/s`, which is slower than the vehicle in front by `1.88 m/s`.
+- A recommendation from the action utility analysis suggests you should accelerate to catch up, as you are too far from the front vehicle.
 
 Final action: `#### 3`
 

@@ -1,10 +1,12 @@
-The first step is to maintain an appropriate distance and speed difference with the car in front. In your lane, vehicle `256` is `29.82 m` ahead, traveling at `16.88 m/s`, whereas your speed is `8.32 m/s`. The Time to Collision (TTC) is calculated as the relative distance divided by the relative speed (if positive). Here, the TTC with the car in front is larger than 4, allowing some flexibility for speed adjustments.
+The ego-vehicle is currently in the leftmost lane, and there is no possibility of changing to the left lane since there is no lane on the left. 
 
-Next, we consider right lane changing. According to the information provided, changing to the right lane is deemed unsafe because the vehicle `392` is only `6.14 m` ahead traveling at a much higher speed (`19.16 m/s`). Thus, there is not enough space for a safe lane change. Additionally, behind the ego-vehicle, vehicle `440` is also traveling faster and closing the distance. Hence, a right lane change is not feasible as it may cause a collision.
+The front vehicle in the ego-vehicle's lane is `29.82 m` ahead, with a speed of `16.88 m/s`. The ego-vehicle's speed is `8.32 m/s`, so it's not maintaining an appropriate speed difference or distance (TTC needs to be calculated and is possibly below the threshold of 4 seconds).
 
-Given these circumstances, deceleration is the next best action to ensure safety and maintain appropriate headway from the vehicle `256` in your current lane while preparing for possible future lane changes once conditions improve.
+Considering the vehicles in the adjacent right lane, vehicle `600` is only `6.14 m` ahead with a higher speed of `19.16 m/s`, making the right lane change unsafe at the current moment.
 
-Even though you can't change lanes right now and being too close to vehicle `256`, it's safe and recommended to decelerate your speed, which is confirmed by the action utility analysis.
+Based on action utility analysis, accelerating or idling is unsafe because the ego-vehicle is too close to the front vehicle and may lead to a collision. Changing to the right lane is considered unsafe due to a high risk of collision.
+
+Decelerating is noted to be safe and recommended to maintain an appropriate distance from the front vehicle.
 
 Final action: `#### 4`
 

@@ -1,15 +1,8 @@
-The ego-vehicle is currently in the rightmost lane, which is the designated area. 
+Since you are already in the rightmost lane, there's no need to change lanes. Therefore, your focus should be on maintaining appropriate distance and speed. 
 
-In the current lane, the vehicle `688` ahead is at `42.41 m` with a slightly lower speed of `19.71 m/s` compared to the ego vehicle’s speed of `21.05 m/s`.
+The vehicle ahead (`992`) is `42.41 m` away and its speed is slightly lower than your current speed. To maintain a safe time-to-collision (TTC) greater than 4 seconds, it's crucial to adjust the speed. 
 
-Condition 1: We need to maintain an appropriate distance and speed difference with the car in front of us. 
-- While the Time to Collision (TTC) is slightly above 4 seconds, the car in front is moving slower. Maintaining or increasing our speed requires a careful evaluation.
-
-Condition 2: There is no right lane change possible as there is no lane on the right. Therefore, staying in the current lane is necessary.
-
-Condition 3: We are already in the rightmost lane, which is our desired final position. 
-
-The Action Utility Analysis recommends acceleration because we are deemed to be too far from the front vehicle. Considering that we do not need to change lanes and our goal is to minimize unnecessary lane changes and maintain safety, adjusting our speed forward is acceptable.
+The action utility analysis suggests it is safe and recommended to accelerate since you are too far from the front vehicle. 
 
 Final action: `#### 3`
 

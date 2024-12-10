@@ -1,12 +1,10 @@
-The ego-vehicle is currently in the rightmost lane. According to the initial preference, if you're already in the rightmost lane, you should stay in this lane. 
+Vehicle `992` is ahead of the ego-vehicle in the same lane, with a distance of `41.73 m`. The speed of Vehicle `992` is `19.36 m/s`, compared to the ego-vehicle's speed of `16.42 m/s`. The Time to Collision (TTC) is calculated as:  
+TTC = Distance / (Speed of target - Speed of ego) = 41.73 / (19.36 - 16.42) ≈ 13.65 seconds.  
+The TTC is greater than 4, so the distance and speed difference with the car ahead is appropriate.  
 
-Next, evaluate the appropriate distance and speed with the car in front. Vehicle `688` is `41.73 m` ahead with a speed of `19.36 m/s`. The ego-vehicle is slower at `16.42 m/s`. The Time-to-Collision (TTC) can be computed to be more than 4 seconds without any impending collision.
+Since the ego-vehicle is already in the rightmost lane, there is no need to change lanes. 
 
-The distance from Vehicle `688` is appropriate based on the given TTC value, but since the Action Utility suggests that accelerating is recommended to catch up due to being too far from the front vehicle, this indicates that increasing speed to balance the gap is favorable.
-
-A right lane change isn't possible since there is no lane to the right, and maintaining distance at a higher speed is safe and recommended.
-
-Therefore, based on this analysis, accelerating is not only safe but recommended to reduce the distance to the vehicle ahead while still maintaining a safe condition.
+The action utility analysis suggests that accelerating might be a good strategy due to being a little far from the front vehicle and having the opportunity to close the gap safely. 
 
 Final action: `#### 3`
 

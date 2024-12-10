@@ -1,12 +1,12 @@
-The ego-vehicle is currently in the rightmost lane. The target is also in the rightmost lane and is ahead by `23.0 m`. Since I'm already in the rightmost lane, there is no option to switch further to the right.
+The ego-vehicle is currently in the rightmost lane, which is the designated area. Hence, there is no need to change lanes to the right.
 
-The vehicle `688` is in front of the ego-vehicle at a 15.74-meter distance with a speed of `20.17 m/s`, and the ego-vehicle speed is 22.21. This is an unsafe condition as it violates the principle of maintaining an appropriate distance and TTC, which should be larger than 4.
+The vehicle `992` is `15.74 m` ahead in the same lane. Its speed is `20.17 m/s`, which is slower than the ego-vehicle's speed of `22.21 m/s`. This means the distance will close rapidly, potentially creating a dangerous situation.
 
-The left lane is available for lane change, but it's against our rule of staying in the rightmost lane if already there. Thus, changing lanes left is not preferred.
+The action utility analysis indicates that both the Idle and Accelerate actions are unsafe, as they might cause the ego-vehicle to collide with the car ahead.
 
-I need to ensure safety by maintaining proper distance with the vehicle in front. Speed need to be reduced to avoid collision. Deceleration is marked "Safe and recommend" in the Action Utility Analysis.
+Deceleration is both safe and recommended, aiming to increase the distance between the ego-vehicle and the vehicle ahead (vehicle `992`), ensuring a safe time-to-collision (TTC) is maintained.
 
-The deceleration action (Action_id: 4) is the safe and recommended option to maintain appropriate distance from the vehicle ahead. This ensures the safety by increasing the following distance and TTC.
+There is no lane available on the right, so the ego-vehicle must remain in the current lane.
 
 Final action: `#### 4`
 

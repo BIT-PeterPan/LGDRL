@@ -1,12 +1,10 @@
-Firstly, we observe that Ego-vehicle is currently in the leftmost lane, and the goal is to gradually move toward the rightmost lane safely.
+Looking at the distance to the vehicle ahead in the current lane: The distance to vehicle `368` is `22.09 m`, whereas it is moving faster than the ego-vehicle with a speed of `16.59 m/s` compared to the ego-vehicle's speed of `10.63 m/s`. This means the gap will increase over time, but currently, the distance is insufficient to maintain a safe TTC larger than 4.
 
-Checking the current speed and distance with Vehicle `256` in front, we notice the distance is `22.09 m` and the vehicle ahead is moving faster (`16.59 m/s`) than the ego-vehicle's speed (`10.63 m/s`). This means the time-to-collision (TTC) is increasing as the distance grows, but still, the current distance is very short which may cause risk.
+Checking if right lane change is viable: The vehicle in the right lane (`600`) is only `3.94 m` behind with a higher speed of `19.01 m/s`. Right lane change is unsafe due to this close proximity and speed differential, which could potentially cause a collision.
 
-According to Action Utility Analysis, acceleration is considered unsafe. This is due to close proximity with Vehicle `256` making it wise to avoid increasing speed. Similarly, IDLE is marked as unsafe, likely due to maintaining the gap might close down rapidly because of the slower speed.
+Since a right lane change is not safe and there's no lane to the left, the focus should be on ensuring safety within the current lane.
 
-Checking the possibility of right lane change, a vehicle `392` is very close behind in the adjacent right lane (only `3.94 m` away), making the right lane change unsafe.
-
-With this evaluation, and since Deceleration is noted as safe and recommended to avoid getting too close to the front vehicle, the best suitable action while maintaining safety and adherence to the lane-changing strategy is to decelerate.
+According to the action utility analysis, accelerating or idling has been deemed unsafe due to potential collisions with vehicle `368`. Deceleration is recommended to create a safe following distance.
 
 Final action: `#### 4`
 

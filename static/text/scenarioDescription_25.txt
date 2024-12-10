@@ -5,13 +5,13 @@ You are driving on a road with 4 lanes, and you are currently driving in the sec
 ****SV State:****
 
 On your driving lane:
-- Vehicle `392` is is ahead of you. The distance is `44.64 m`. It's speed is `19.43 m/s`. It's acceleration is `0.03 m/s^2.`
-- Vehicle `440` is is behind of you. The distance is `22.46 m`. It's speed is `12.55 m/s`. It's acceleration is `-2.00 m/s^2.`
+- Vehicle `600` is is ahead of you. The distance is `44.64 m`. It's speed is `19.43 m/s`. It's acceleration is `0.03 m/s^2.`
+- Vehicle `648` is is behind of you. The distance is `22.46 m`. It's speed is `12.55 m/s`. It's acceleration is `-2.00 m/s^2.`
 
 On your left lane:
-- Vehicle `584` is is behind of you. The distance is `26.59 m`. It's speed is `16.27 m/s`. It's acceleration is `1.55 m/s^2.`
+- Vehicle `80` is is behind of you. The distance is `26.59 m`. It's speed is `16.27 m/s`. It's acceleration is `1.55 m/s^2.`
 
 On your right lane:
-- Vehicle `624` is is ahead of you. The distance is `4.34 m`. It's' speed is `16.47 m/s`. It's acceleration is `0.42 m/s^2.`
-- Vehicle `48` is is behind of you. The distance is `43.20 m`. It's' speed is `15.13 m/s`. It's acceleration is `0.52 m/s^2.`
+- Vehicle `784` is is ahead of you. The distance is `4.34 m`. It's' speed is `16.47 m/s`. It's acceleration is `0.42 m/s^2.`
+- Vehicle `208` is is behind of you. The distance is `43.20 m`. It's' speed is `15.13 m/s`. It's acceleration is `0.52 m/s^2.`
 

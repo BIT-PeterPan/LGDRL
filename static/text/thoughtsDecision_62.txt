@@ -1,10 +1,10 @@
-The ego vehicle is currently in the rightmost lane, which aligns with the goal of reaching the designated area.
+The ego-vehicle is currently in the rightmost lane with no option to change lanes to the right. This means the vehicle should remain in its current lane.
 
-The vehicle in front of the ego at a distance of `15.34 m` is moving at a slightly higher speed (`20.21 m/s`) than the ego (`19.89 m/s`), meaning the distance between the ego and the lead vehicle is likely to increase over time. However, the current distance is close, and with the action utility analysis marking idle and acceleration as unsafe, we must prioritize safety.
+The vehicle `992` ahead is only `15.34 m` away, traveling at slightly higher speed of `20.21 m/s`. This distance is close, and maintaining or increasing speed (Idle/Accelerate) might lead to a collision, making these actions unsafe.
 
-Decreasing speed through deceleration is safe and recommended due to the proximity of the lead vehicle. Deceleration will ensure an appropriate distance is maintained, preventing any potential collision.
+Given the vehicle's current speed of `19.89 m/s` and the vehicle ahead's speed (`20.21 m/s`), the time-to-collision (TTC) indicates potential for collision if an immediate action isn't taken, given the proximity.
 
-Although changing to the left lane is considered safe, the ego vehicle is already in the designated rightmost lane, so changing lanes is unnecessary and does not align with the goal.
+The safest option, as suggested by the utility analysis, is to decelerate to increase the distance to the vehicle ahead and maintain a safe TTC.
 
 Final action: `#### 4`
 

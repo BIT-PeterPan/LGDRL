@@ -1,26 +1,10 @@
-Given the scenario, here is the decision-making process for the autonomous vehicle:
+Currently, the ego-vehicle is in the leftmost lane with a vehicle ahead at a close distance of `28.92 m`. The front vehicle is decelerating, and it poses a risk of collision if the current speed is maintained or increased.
 
-1. **Evaluate Distance and Speed:**
-   - The ego-vehicle is currently `28.92 m` behind vehicle `256` in the same lane, which is traveling at `14.27 m/s` with negative acceleration (`-`2.00 m/s`^2`).
-   - The Time-To-Collision (TTC) can be approximately calculated.  
-     \[
-     \text{Relative Speed} = 23.37 - 14.27 = 9.10 \text{ m/s}
-     \]  
-     Assuming constant speed,  
-     \[
-     \text{TTC} = \frac{28.92}{9.10} \approx 3.18 \text{ sec}
-     \]  
-     The TTC is less than our safety threshold of 4 seconds, indicating a potential risk of collision.
+Due to the close proximity to the vehicle in front, it is essential to maintain a safe distance and avoid accelerating, as this increases the chance of collision. The appropriate action is to decelerate to increase the following distance and ensure safety.
 
-2. **Right Lane Change Feasibility:**
-   - The vehicle ahead in the right lane (`344`) is `37.32 m` ahead, traveling at `21.73 m/s`. 
-   - The vehicle behind in the right lane (`392`) is `10.86 m` behind, traveling at `15.59 m/s`.
-   - Attempting a right lane change is marked as unsafe due to potential collision with nearby vehicles.
+Moreover, the analysis confirms that change to the right lane is currently unsafe due to inadequate space, particularly considering the proximity of Vehicle `600` behind in the adjacent lane, making it unsafe for a right lane change.
 
-3. **Current Lane Decisions:**
-   - With a TTC of 3.18 seconds, maintaining current speed ("Idle") is not advisable.
-   - Based on the action utility analysis, acceleration is declared unsafe due to increased risk of collision with vehicle `256`.
-   - Deceleration is recommended for creating safer distance, reducing TTC, and lowering collision risk.
+Given these factors and recommendations from the action utility analysis, the optimal decision is to decelerate to ensure safety and maintain an appropriate distance from the vehicle ahead.
 
 Final action: `#### 4`
 

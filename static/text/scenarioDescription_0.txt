@@ -9,6 +9,6 @@ There is no vehicle on your driving lane.
 There is no lane on your left.
 
 On your right lane:
-- Vehicle `344` is is ahead of you. The distance is `38.13 m`. It's' speed is `22.29 m/s`. It's acceleration is `0.00 m/s^2.`
-- Vehicle `392` is is behind of you. The distance is `1.12 m`. It's' speed is `19.50 m/s`. It's acceleration is `0.00 m/s^2.`
+- Vehicle `552` is is ahead of you. The distance is `38.13 m`. It's' speed is `22.29 m/s`. It's acceleration is `0.00 m/s^2.`
+- Vehicle `600` is is behind of you. The distance is `1.12 m`. It's' speed is `19.50 m/s`. It's acceleration is `0.00 m/s^2.`
 
